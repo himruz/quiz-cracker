@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    border-radius: 41px;
+    padding: 25px;
+    margin-top: 14px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+a.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ms-auto.my-2.my-lg-0.navbar-nav.navbar-nav-scroll a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.banner-text {
+    padding-left: 45px;
+}
+
+.banner-text h2 {
+    line-height: 81px;
+    letter-spacing: 1px;
+    font-size: 3.5rem;
+    text-align: left;
+    color: #343434;
+    font-weight: 700;
+}
+
+.banner-text p {
+    text-align: left;
+    font-weight: 600;
+    color: #343434;
+}
+
+button.btn.btn-primary.text-right {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+    border: none;
+    width: 144px;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.start-btn {
+    text-align: left;
+    /* width: 119px; */
+}
