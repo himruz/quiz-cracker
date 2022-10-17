@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import './Home.css'
 
 const HeaderBanner = () => {
@@ -24,6 +26,23 @@ const HeaderBanner = () => {
                 </div>
                 
                 
+            </div>
+            <div className="row mt-5 pt-5">
+                <div className="quiz-text">
+                    <h2>Let's Choose The Topic</h2>
+                </div>
+                <div className="col-lg-6 d-flex justify-content-center mt-5">
+                                <Card style={{ width: '18rem' }} className='shadow-lg'>
+                    <Card.Img variant="top" src="https://taglineinfotech.com/wp-content/uploads/2022/04/Main-Image-6.png" />
+                    <Card.Body>
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Text>
+                        
+                        </Card.Text>
+                        <Button variant="primary" className='select-btn'>Go somewhere</Button>
+                    </Card.Body>
+                    </Card>
+                </div>
             </div>
           </div>
     );

@@ -31,3 +31,14 @@ button.btn.btn-primary.text-right {
     text-align: left;
     /* width: 119px; */
 }
+
+.select-btn {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+    border: none !important;
+}
+
+.quiz-text h2 {
+    color: #343434;
+    font-size: 3rem;
+    font-weight: 700;
+}

@@ -6,7 +6,7 @@ import './Header.css'
 
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top"  className='shadow-lg'>
       <Container fluid>
       <Navbar.Brand href="#">TALENT-HUNT</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
