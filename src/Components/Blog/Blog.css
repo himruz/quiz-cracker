@@ -1,0 +1,13 @@
+.wrapper {
+    height: 100vh;
+}
+
+.middle {
+    margin: 0 auto !important;
+}
+
+button.accordion-button {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+    color: #fff !important;
+}
