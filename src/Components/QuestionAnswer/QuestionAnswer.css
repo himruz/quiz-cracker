@@ -25,3 +25,11 @@ span {
     padding: 32px;
     border-radius: 22px;
 }
+
+@media (max-width: 768px) {  
+    .option-wrapper {
+       
+        grid-template-columns: 1fr;
+        
+    }
+}
