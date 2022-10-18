@@ -1,15 +1,17 @@
-import React from 'react';
+import {React,useState, useRef} from 'react';
 import './QuestionAnswer.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 const QuestionAnswer = ({questionData, index} ) => {
     const {question, options, correctAnswer} = questionData;
-    
+
     const getAnswer = (answer) =>{
         if(correctAnswer === options[answer]){
-            toast("Wow Correct Answer!!!");
+            toast("Congratulations Correct Answer!!!");
             return
         }else{
             toast("Opps Wrong Answer!!!");
@@ -17,10 +19,25 @@ const QuestionAnswer = ({questionData, index} ) => {
         }
 
     } 
+    const [show, setShow] = useState(false);
+  const target = useRef(null);
     return (
-        <div>
+        <div className='qna-wrapper shadow-lg mb-5'>
             <div className="row mt-5 mb-5">
-                <h4>Quiz {index+1} : {question} <span><EyeIcon style={{ width: '18px'}}></EyeIcon></span></h4>
+                <h4>Quiz  {index+1} : {question}
+                        <span ref={target} onClick={() => setShow(!show)}>
+                        <EyeIcon style={{ width: '18px'}}></EyeIcon>
+                        </span>
+                    <>
+                <Overlay target={target.current} show={show} placement="right">
+                    {(props) => (
+                    <Tooltip id="overlay-example" {...props}>
+                      Answer : {correctAnswer}
+                    </Tooltip>
+                    )}
+                </Overlay>
+                </>
+               </h4>
             </div>
             <div className="row">
                 <div className='option-wrapper'>
@@ -31,7 +48,8 @@ const QuestionAnswer = ({questionData, index} ) => {
                 </div>
             </div>
         </div>
-        
+    
+            
     );
 };
 
