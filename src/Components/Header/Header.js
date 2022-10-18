@@ -8,7 +8,7 @@ function NavScrollExample() {
   return (
     <Navbar bg="light" expand="lg" sticky="top"  className='shadow-lg'>
       <Container fluid>
-      <Navbar.Brand href="#">TALENT-HUNT</Navbar.Brand>
+         <Navbar.Brand href="#">TALENT-HUNT</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,7 +16,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link to='/'>Topics</Link>
+            <Link to='/home'>Topics</Link>
             <Link to='/statics'>Statics</Link>
             <Link to='/blog'>Blogs</Link>
           </Nav>

@@ -1,0 +1,20 @@
+.select-btn {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+    border: none !important;
+    width: 200px;
+    
+}
+
+.quiz-text h2 {
+    color: #343434;
+    font-size: 3rem;
+    font-weight: 700;
+}
+button.select-btn.btn.btn-primary {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-img, .card-img-top {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,45,184,1) 0%, rgba(179,29,253,1) 100%);
+}
